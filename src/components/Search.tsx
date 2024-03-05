@@ -10,6 +10,7 @@ import { BsSearch } from "react-icons/bs";
 const Search = ({ loadUser }: SearchProps) => {
   const [userName, setUserName] = useState("");
 
+  // ativando o clack do enter
   const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === "Enter") {
       loadUser(userName);
